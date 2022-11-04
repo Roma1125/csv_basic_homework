@@ -10,6 +10,7 @@ def get_first_row(data):
     """
     list=data.split('\n')
     list1=list[0].split(',')
+    list1.pop(0)
 
     return ((list1))
 f=open('data.csv').read()
