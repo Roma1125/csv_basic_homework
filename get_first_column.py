@@ -9,8 +9,10 @@ def get_first_column(data):
     d=[]
     list=data.split('\n')
     for i in range(len(list)):
-        d.append((list[i].split(','))[0])
-    d.pop(0)
+        if list[i]!='':
+
+            d.append((list[i].split(','))[0])
+    
   
     return ((d))
 f=open('data.csv').read()
