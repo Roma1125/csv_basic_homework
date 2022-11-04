@@ -9,8 +9,8 @@ def get_first_row(data):
         column_names: list of column names
     """
     list=data.split('\n')
-    list1=list[0].split(',')
-    list1.pop(0)
+    list1=list[1].split(',')
+    
 
     return ((list1))
 f=open('data.csv').read()
